@@ -3,18 +3,18 @@ package domain;
 public class Corriente extends Cuenta {
     private double impuesto;
 
-    // 🔹 Constructor vacío
+    // Constructor vacío
     public Corriente() {
         super();
     }
 
-    // 🔹 Constructor con parámetros
+    // Constructor con parámetros
     public Corriente(String numeroCuenta, long dniCliente, double saldoActual, double impuesto) {
         super(numeroCuenta, dniCliente, saldoActual);
         this.impuesto = impuesto;
     }
 
-    // 🔹 Getter y Setter
+    // Getter y Setter
     public double getImpuesto() {
         return impuesto;
     }
@@ -23,7 +23,7 @@ public class Corriente extends Cuenta {
         this.impuesto = impuesto;
     }
 
-    // 🔹 toString
+    // toString
     @Override
     public String toString() {
         return "Corriente{" +
