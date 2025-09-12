@@ -49,7 +49,7 @@ public class App {
                     System.out.print("Fecha de creación (YYYY-MM-DD): ");
                     String fecha = sc.nextLine();
                     serviceCuenta.crearCuenta(new Ahorro(numAhorro, dniAhorro, saldoAhorro, fecha));
-                    System.out.println("✅ Cuenta de Ahorro creada!");
+                    System.out.println("Cuenta de Ahorro creada!");
                     break;
 
                 case 4:
@@ -62,7 +62,7 @@ public class App {
                     System.out.print("Impuesto: ");
                     double imp = sc.nextDouble();
                     serviceCuenta.crearCuenta(new Corriente(numCorr, dniCorr, saldoCorr, imp));
-                    System.out.println("✅ Cuenta Corriente creada!");
+                    System.out.println("Cuenta Corriente creada!");
                     break;
 
                 case 5:
@@ -70,9 +70,9 @@ public class App {
                     String buscar = sc.nextLine();
                     Cuenta encontrada = serviceCuenta.obtenernumeroCuenta(buscar);
                     if (encontrada != null) {
-                        System.out.println("🔎 Cuenta encontrada: " + encontrada);
+                        System.out.println("Cuenta encontrada: " + encontrada);
                     } else {
-                        System.out.println("⚠️ No se encontró la cuenta.");
+                        System.out.println("No se encontró la cuenta.");
                     }
                     break;
 
@@ -84,11 +84,11 @@ public class App {
                     break;
 
                 case 7:
-                    System.out.println("👋 Saliendo del sistema...");
+                    System.out.println("Saliendo del sistema...");
                     break;
 
                 default:
-                    System.out.println("❌ Opción inválida.");
+                    System.out.println("Opción inválida.");
             }
         } while (opcion != 7);
 
