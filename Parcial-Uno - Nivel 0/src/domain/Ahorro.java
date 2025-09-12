@@ -3,18 +3,18 @@ package domain;
 public class Ahorro extends Cuenta {
     private String fechaCreacion;
 
-    // 🔹 Constructor vacío
+    // Constructor vacío
     public Ahorro() {
         super();
     }
 
-    // 🔹 Constructor con parámetros
+    // Constructor con parámetros
     public Ahorro(String numeroCuenta, long dniCliente, double saldoActual, String fechaCreacion) {
         super(numeroCuenta, dniCliente, saldoActual);
         this.fechaCreacion = fechaCreacion;
     }
 
-    // 🔹 Getter y Setter
+    // Getter y Setter
     public String getFechaCreacion() {
         return fechaCreacion;
     }
@@ -23,7 +23,7 @@ public class Ahorro extends Cuenta {
         this.fechaCreacion = fechaCreacion;
     }
 
-    // 🔹 toString
+    // toString
     @Override
     public String toString() {
         return "Ahorro{" +
