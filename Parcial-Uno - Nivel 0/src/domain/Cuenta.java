@@ -5,18 +5,18 @@ public class Cuenta {
     private long dniCliente;
     private double saldoActual;
 
-    // 🔹 Constructor vacío
+    // Constructor vacío
     public Cuenta() {
     }
 
-    // 🔹 Constructor con parámetros
+    // Constructor con parámetros
     public Cuenta(String numeroCuenta, long dniCliente, double saldoActual) {
         this.numeroCuenta = numeroCuenta;
         this.dniCliente = dniCliente;
         this.saldoActual = saldoActual;
     }
 
-    // 🔹 Getters y setters
+    // Getters y setters
     public String getNumeroCuenta() {
         return numeroCuenta;
     }
@@ -41,7 +41,7 @@ public class Cuenta {
         this.saldoActual = saldoActual;
     }
 
-    // 🔹 toString
+    // toString
     @Override
     public String toString() {
         return "Cuenta{" +
